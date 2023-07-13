@@ -21,7 +21,7 @@
 		      <?php } ?>
 				</h4>
 				<?php echo form_open('cart/download_invoice/'.$history_detail_row->id_trans) ?>
-					<button type="submit" name="download_invoice" class="btn btn-sm btn-success">Download Invoice</button>
+					<!-- <button type="submit" name="download_invoice" class="btn btn-sm btn-success">Download Invoice</button> -->
 				<?php echo form_close() ?>
 				<br>
 				<div class="row">

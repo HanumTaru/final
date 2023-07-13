@@ -35,7 +35,7 @@
                           <th style="text-align: center">Username</th>
                           <th style="text-align: center">Email</th>
                           <th style="text-align: center">Last Login</th>
-                          <th style="text-align: center">Usertype</th>
+                          <!-- <th style="text-align: center">Usertype</th> -->
                           <th style="text-align: center">Status</th>
                           <th style="text-align: center">Aksi</th>
                         </tr>
@@ -48,7 +48,7 @@
                             <td style="text-align:center"><?php echo $user->username ?></td>
                             <td style="text-align:center"><?php echo $user->email ?></td>
                             <td style="text-align:center"><?php if(!empty($user->last_login)){echo date("Y-m-d H:i:s", $user->last_login);} ?></td>
-                              <td style="text-align:center"><?php echo $user->name_group ?></td>
+                              <!-- <td style="text-align:center"><?php echo $user->name_group ?></td> -->
                               <td style="text-align:center"><?php echo ($user->active) ? anchor("admin/auth/deactivate/".$user->id, 'ACTIVE','title="ACTIVE", class="btn btn-sm btn-primary"', lang('index_active_link')) : anchor("admin/auth/activate/". $user->id, 'INACTIVE','title="INACTIVE", class="btn btn-sm btn-danger"' , lang('index_inactive_link'));?></td>
                               <td style="text-align:center">
                                 <?php
@@ -67,7 +67,7 @@
                             <th style="text-align: center">Username</th>
                             <th style="text-align: center">Email</th>
                             <th style="text-align: center">Last Login</th>
-                            <th style="text-align: center">Usertype</th>
+                            <!-- <th style="text-align: center">Usertype</th> -->
                             <th style="text-align: center">Status</th>
                             <th style="text-align: center">Aksi</th>
                           </tr>
@@ -80,7 +80,7 @@
                               <td style="text-align:center"><?php echo $user->username ?></td>
                               <td style="text-align:center"><?php echo $user->email ?></td>
                               <td style="text-align:center"><?php echo $user->last_login ?></td>
-                              <td style="text-align:center"><?php echo $user->name_group ?></td>
+                              <!-- <td style="text-align:center"><?php echo $user->name_group ?></td> -->
                               <td style="text-align:center"><?php echo ($user->active) ? anchor("admin/auth/deactivate/".$user->id, 'ACTIVE','title="ACTIVE", class="btn btn-sm btn-primary"', lang('index_active_link')) : anchor("admin/auth/activate/". $user->id, 'INACTIVE','title="INACTIVE", class="btn btn-sm btn-danger"' , lang('index_inactive_link'));?></td>
                               <td style="text-align:center">
                                 <?php
